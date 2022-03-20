@@ -16,6 +16,36 @@
     <title>design 1</title>
   </head>
   <body>
-    this is
+    <!-- container -->
+    <div class="card-container">
+      <!-- header -->
+      <header>How do you feel about this quote?</header>
+      <!-- card -->
+      <div class="card-slide fade">
+        <img src="./images/img_statement_1.png" alt="" />
+      </div>
+      <div class="card-slide fade">
+        <img src="./images/img_statement_2.png" alt="" />
+      </div>
+      <div class="card-slide fade">
+        <img src="./images/img_statement_3.png" alt="" />
+      </div>
+      <!-- rating icons section -->
+      <div class="icons-widget">
+        <div class="icon" onclick="plusSlides(1)">
+          <img src="./images/img_cat_happy.png" alt="" />
+          <figcaption>Prrr</figcaption>
+        </div>
+        <div class="icon" onclick="plusSlides(1)">
+          <img src="./images/img_cat_neutral.png" alt="" />
+          <figcaption>Meow</figcaption>
+        </div>
+        <div class="icon" onclick="plusSlides(1)">
+          <img src="./images/img_cat_supersad.png" alt="" />
+          <figcaption>Hiss</figcaption>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
+<script src="./script.js"></script>
