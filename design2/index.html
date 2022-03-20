@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>design 1</title>
+  </head>
+  <body>
+    <!-- container -->
+    <div class="card-container">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- header -->
+      <header>How do you feel about this quote?</header>
+      <!-- card -->
+      <div class="card-slide fade">
+        <img src="./images/img_statement_1.png" alt="" />
+      </div>
+      <div class="card-slide fade">
+        <img src="./images/img_statement_2.png" alt="" />
+      </div>
+      <div class="card-slide fade">
+        <img src="./images/img_statement_3.png" alt="" />
+      </div>
+      <!-- rating stars section -->
+      <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5" />
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4" />
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3" />
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2" />
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1" />
+        <label for="rate-1" class="fas fa-star"></label>
+        <section id="comment"></section>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./script.js"></script>
