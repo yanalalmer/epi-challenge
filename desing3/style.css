@@ -1,0 +1,155 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* CSS RESET */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  font-family: 'Poppins', sans-serif;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(../design1/images/background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(20px);
+}
+/* VARIABLES */
+:root {
+  --color-black: #111;
+  --color-black-light: #222;
+  --color-white: #eee;
+  --color-grey: #444;
+  --color-yellow: #fd4;
+  --color-blue-light: #7bcafd;
+  --color-blue-dark: #0156ff;
+  --color-orange: #952;
+  --color-yellow-light: #fe7;
+}
+/* MAIN CSS */
+.card-container {
+  width: 800px;
+  background-color: var(--color-blue-light);
+  padding: 20px 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+}
+.prev {
+  left: 0;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.card-container header {
+  font-size: 28px;
+  color: var(--color-white);
+  padding: 20px 0;
+  cursor: move;
+  user-select: none;
+}
+@media (max-width: 400px) {
+  .card-container header {
+    font-size: 19px;
+  }
+}
+/* animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* card */
+.card-slide {
+  display: none;
+}
+/* rating stars section */
+.icons-widget {
+  margin: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.icons-widget .icon {
+  background-color: var(--color-white);
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+.icons-widget .icon.active {
+  background-color: var(--color-yellow);
+}
