@@ -132,9 +132,9 @@ body {
   }
 }
 /* card */
-/* .card-slide {
+.card-slide {
   display: none;
-} */
+}
 /* rating stars section */
 .icons-widget {
   margin: 30px 0;
