@@ -133,7 +133,7 @@ body {
 }
 /* card */
 .card-slide {
-  /* display: none; */
+  display: none;
 }
 /* rating stars section */
 .star-widget {
