@@ -1,7 +1,8 @@
 # epi-challenge
 
 Survey cards using html , css, and vanilla JavaScript.
-Download zip folder, then run using your favorite live server (example: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
+Download the code then run using your favorite live server (example: https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 option 1: is a re-creation of design-1 with the cats images, you can rate your quote based on one of 3 options, once you choose your rating the card will move to the next slide and the rating will be re-set.
 
